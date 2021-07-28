@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>      //header for string class
+#include <sstream>      //for using stringstream
 using namespace std;
 
 //Typed constant expressions
@@ -89,7 +90,27 @@ int main()
     cout << "\n\n(5 > 7) ? yes : no = " << value << endl;
 
     int zip;
-    cout << "Enter zipcode : " << endl;
-    cin >> zip;
-    cout << "Zipcode : " << zip << endl; 
+    //cout << "Enter zipcode : " << endl;
+    //cin >> zip;
+    //cout << "Zipcode : " << zip << endl; 
+
+    string fullname;
+    //cout << "Enter  full name : ";
+
+    cin.sync();
+
+    //getline(cin, fullname);
+    //cout << "Full Name : " << fullname << endl;
+
+    cerr << "This is a error output stream." << endl;
+
+    clog << "This a logging output stream. " << endl;
+
+
+    string pricestr;
+    cout << "Enter Price : ";
+    getline(cin, pricestr);
+    int priceint;
+    stringstream(pricestr) >> priceint;
+    cout << "Price = " << priceint;
 }
