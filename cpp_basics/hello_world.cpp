@@ -112,5 +112,27 @@ int main()
     getline(cin, pricestr);
     int priceint;
     stringstream(pricestr) >> priceint;
-    cout << "Price = " << priceint;
+    cout << "Price = " << priceint << endl;
+
+    if (priceint > 100)
+    {
+        cout << "Price is greater than 100" << endl;
+    }
+    else if (priceint < 100)
+    {
+        cout << "Price is less than 100" <<endl;
+    }
+    else if (priceint == 100)
+    {
+        cout << "Price is exact 100" << endl;
+    }
+
+    cout << "Starting countdown!!!" << endl;
+    i = 0;
+    while (i <= 10)
+    {
+        cout << "\nCountdown: " << i;
+        i++;
+    } 
+    cout << "\nHere we go!! TAKEOFF!!!" << endl;
 }
