@@ -128,11 +128,17 @@ int main()
     }
 
     cout << "Starting countdown!!!" << endl;
-    i = 0;
-    while (i <= 10)
+    n = 10;
+    while (n >= 0)
     {
-        cout << "\nCountdown: " << i;
-        i++;
+        cout << "\nCountdown: " << n;
+
+        if (n == 0)
+        {
+            cout << "\nHere we go!! TAKEOFF!!!";
+        }
+
+        --n;
     } 
-    cout << "\nHere we go!! TAKEOFF!!!" << endl;
+    
 }
