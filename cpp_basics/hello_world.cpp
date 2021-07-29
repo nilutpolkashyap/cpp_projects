@@ -216,4 +216,41 @@ int main()
             continue;
         cout << i << " ";
     }
+
+    cout << "\n\nUse of goto statement\n";
+    n = 10;
+    justgothere:
+        cout << n << ", ";
+    n--;
+    if (n > 0)
+        goto justgothere;
+    cout << "Liftoff!!!";
+
+    cout << "\n\n";
+
+    //switch statement
+    string item {"0"};
+    //cout << "Enter an item number (book-32, pen-6, laptop-76, phone-13) : ";
+    //getline(cin, item);
+    int num_item;
+    stringstream (item) >> num_item;
+    //cout << "Item entered : " << item;
+    switch (num_item)
+    {
+        case 32:
+            cout <<"\nYou are reading a book" << endl;
+            break;
+        case 6:
+            cout <<"\nYou are using a pen" << endl;
+            break;
+        case 76:
+            cout << "\nYou are working on your laptop" << endl;
+            break;
+        case 13:
+            cout << "\nYou are using your phone" << endl;
+            break;
+        default:
+            cout << "\nWhat are you doing!!! I am confused!!" << endl;
+    }
+
 }
