@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>      //header for string class
 #include <sstream>      //for using stringstream
+#include <map>          //for using MAP
 using namespace std;
 
 //Typed constant expressions
@@ -106,7 +107,7 @@ int main()
 
     clog << "This a logging output stream. " << endl;
 
-
+/*
     string pricestr;
     cout << "Enter Price : ";
     getline(cin, pricestr);
@@ -126,7 +127,9 @@ int main()
     {
         cout << "Price is exact 100" << endl;
     }
+*/
 
+    //while loop
     cout << "Starting countdown!!!" << endl;
     n = 10;
     while (n >= 0)
@@ -141,4 +144,76 @@ int main()
         --n;
     } 
     
+
+    //do-while loop
+    cout << "\n\nCounting till 4 ";
+    m = 10;
+    do {
+        if(m == 10)
+        {
+            cout << "\nFirst Statement at " << m;
+        }
+        cout << "\nNumber is  " << m;
+    }while(m-- > 4);
+    cout << "\n\n";
+
+    //for loop
+    for(int i = 0; i < 10; i+=2)
+    {
+        cout << "Value of i : " << i << endl;
+    }
+    cout << "LiftOFF!!";
+    cout << "\n\n";
+
+    for(n=0, i =100; n !=i; ++n, --i)
+    {
+        cout << "\n( n = " << n << " i = " << i << " )";
+    }
+
+    //range based for loop
+    cout << "\nUse of Range based for loop " << endl;
+    int arr[] = {23,3, 64, 34, 6, 44};
+    for(auto a : arr)
+    {
+        cout << "\nvalue : " << a;
+    }
+
+    cout << "\n\n";
+
+    string str = "nilutpol";
+    for (auto c : str)
+    {
+        cout << c << " ";
+    }
+
+    cout << "\n\n";
+
+    // Printing keys and values of a map
+    // Maps are associative containers that store elements in a mapped fashion
+    std::map <int, int> MAP({{1, 1}, {2, 2}, {3, 3}});
+    for (auto i : MAP)
+    {
+        std::cout << '{' << i.first << ", " << i.second << "}\n";
+    }
+
+    cout << "\n\nUse of break statement";
+
+    //break statement
+    for (auto i = 0; i< 10; i++)
+    {
+        if (i == 6)
+            break;
+
+        cout << i << " ";
+    }
+
+    cout << "\n\nUse of continue statement";
+
+    //continue statement
+    for(auto i = 0; i < 10; i++)
+    {
+        if((i == 3) || (i ==7))
+            continue;
+        cout << i << " ";
+    }
 }
