@@ -139,10 +139,8 @@ void odd(int x)
 
 }
 
-void odd(int x)
+void even(int x)
 {
-    if (x%2 != 0)
-        cout << "\nIt is an odd number";
-    else
-        even(x);
+    if (x%2 == 0)
+        cout << "\nIt is an even number";
 }
