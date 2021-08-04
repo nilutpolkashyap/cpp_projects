@@ -1,22 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
+
 int main()
 {
-if (0) // Replace 1 with 0 and see the magic
-{
-    label_1: cout <<"Hello ";
-     
-    // Jump to the else statement after
-    // executing the above statement
-    goto label_2;
-}
-else
-{
-    // Jump to 'if block statement' if
-    // the Boolean condition becomes false
-    goto label_1;
- 
-    label_2: cout <<"Geeks";
-}
-return 0;
+    int i = 1;
+
+    if (i)
+    {
+        dest_1 : cout << "\nBody of if\n";
+
+        goto dest_2;
+    }
+
+    else{
+        goto dest_1;
+
+        dest_2 : cout << "\nBody of else\n";
+    }
 }
