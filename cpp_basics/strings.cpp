@@ -25,8 +25,32 @@ int main()
     // initialization by part of another string
     str2 = "Welcome everyone";
     cout << "str : " << str2 << endl;
+
     string str6(str2, 3,9);
-    cout << "Part initialized string : " << str6 << endl;
+    cout << "Part initialized string : " << str4 << endl;
+    cout << "\n";
+
+    //use of begin() 
+    string str7(str2.begin()+3, str2.begin()+12);
+    cout << "using begin() : " << str7 << endl;
+
+    int num = str2.length();
+    cout << "Length of " << str2 << " using length() : " << num << endl;
+
+    num = str2.size();
+    cout << "Length of " << str2 << " using size() : " << num <<endl;
+
+    cout << "3rd character of " << str2 << " is : " << str2.at(2) << endl;
+
+    cout << "first character of " << str2 << " : " << str2.front() << endl;
+    cout << "last character of " << str2 << " : " << str2.back() << endl;
+
+    cout << " fifth"
+
+    cout << "\n";
+    str4.clear();       // clear function deletes all character from string
+    
+    cout << "string : " << str4 ;
 
 
 }
