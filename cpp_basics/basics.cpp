@@ -1,4 +1,5 @@
 #include <iostream>
+// iostream stands for standard input-output stream. This header file contains definitions of objects like cin, cout, cerr, etc.
 #include <string>      //header for string class
 #include <sstream>      //for using stringstream
 #include <map>          //for using MAP
