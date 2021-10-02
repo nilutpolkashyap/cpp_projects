@@ -41,6 +41,35 @@ int main(int argc, char **argv)
         label2 : cout << "Hello from else" << endl;
     }
 
+    // use pf switch statements
+    cout << "\n\nUse of switch case" << endl;
+    cout << "Choose an option (a, b, c, d) : " << endl;
+    char ch;
+    cin >> ch;
+
+    switch(ch)
+    {
+        case 'a': 
+            cout << "Your answer is apple." << endl;
+            break;
+
+        case 'b':
+            cout << "Your answer is banana." << endl;
+            break;
+
+        case 'c':
+            cout << "Your answer is chicken." << endl;
+            break;
+
+        case 'd':
+            cout << "Your answer is donut." << endl;
+            break;
+
+        default:
+            cout << "LOL!!! You should have chosen wisely" << endl;
+    }
+
+
 
     return 0;
 }

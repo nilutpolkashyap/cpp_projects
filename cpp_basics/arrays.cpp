@@ -20,5 +20,15 @@ int main()
     }
     cout << "\n\n";
 
+    cout << arr1;
+    cout << "\n";
+    cout << arr1 +3;
 
+    cout << "\n";
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Value : " << arr1[i] << " Index : " << i << " Address : " << & arr1[i] << endl;
+
+    }
 }

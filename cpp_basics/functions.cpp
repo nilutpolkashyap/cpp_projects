@@ -99,7 +99,7 @@ int main()
     cout << "\na = " << a << " b = " << b << " c = " << c << endl;
     cout << "After function call" << endl;
     call_by_reference(a, b, c);
-    cout << "\na = " << a << " b = " << b << " c = " << c << endl;
+    cout << "a = " << a << " b = " << b << " c = " << c << endl;
 
     string str1 {"Hello"};
     string str2 {" World"};
@@ -113,9 +113,9 @@ int main()
     //inline function
     int d {3};
     cout << "\nd = " << d << endl;
-    cout << "\nUsing inline funtion, cube of d = " << cube(d) << endl;
+    cout << "Using inline funtion, cube of d = " << cube(d) << endl;
 
-    cout << "a and b default : " << addit() << endl;
+    cout << "\na and b default : " << addit() << endl;
     cout << "a = 7 : " << addit(3) << endl;
     cout << "a = 2 & b = 8 : " << addit(2,8) << endl;
 
