@@ -46,34 +46,39 @@ int main()
     //string - sequence of characters 
     //endl - printing a newline character and flushing the stream
     string book  ("robotics");
+    cout << "\nBook name = \t" << book << endl;
     book = "probabilistic robotics";
     cout << "\nBook name = \t" << book << endl;
 
     string stra = "this is " "a " \
-    "single " "line";
+    "single " "sentence" \
+    " written" " over " \
+    "multiple lines";
     cout << "stra = " << stra << endl;
     cout << NEWLINE;
 
     int i;
     float f {3.14};
     i = (int) f;
-    cout << "\ni = " << i;
+    cout << "\ni = " << i << endl;
 
     //increment/decrement operator
-    //int varx {14};
-    //cout << "\nvarx = " << varx;
-    //cout << "\nvarx++ = " << varx++;
-    //cout << "\nvarx = " << varx;
-
     int varx {14};
     cout << "\nvarx = " << varx;
-    cout << "\n++varx = " << varx++;
+    cout << "\nvarx++ = " << varx++;
     cout << "\nvarx = " << varx;
+    cout << NEWLINE;
+
+    int vary {14};
+    cout << "\nvary = " << vary;
+    cout << "\n++vary = " << vary++;
+    cout << "\nvary = " << vary;
 
     //logical operator
     bool val {true};
     cout << "\n\nvalue : " << val;
     cout << "\n!value : " << !val;
+    cout << NEWLINE;
 
     a = (bool) a;
     b = (bool) b;
@@ -81,14 +86,15 @@ int main()
     b = false;
     cout << "\ntrue && false = " << a && b;
     cout << "\nfalse && false = " << !a && b;
-    cout << "\n true && true = " << a && !b;
+    cout << "\ntrue && true = " << a && !b;
 
 
     //ternary operators
     int m {5}, n {7};
     int value;
     value = (m > n) ? 1 : 0;
-    cout << "\n\n(5 > 7) ? yes : no = " << value << endl;
+    cout << "\n\n(5 > 7) ? yes(1) : no(0) = " << value << endl;
+    cout << NEWLINE;
 
     int zip;
     //cout << "Enter zipcode : " << endl;
@@ -107,7 +113,7 @@ int main()
 
     clog << "This a logging output stream. " << endl;
 
-/*
+    cout << NEWLINE;
     string pricestr;
     cout << "Enter Price : ";
     getline(cin, pricestr);
@@ -127,7 +133,7 @@ int main()
     {
         cout << "Price is exact 100" << endl;
     }
-*/
+    cout << NEWLINE;
 
     //while loop
     cout << "Starting countdown!!!" << endl;
@@ -158,19 +164,22 @@ int main()
     cout << "\n\n";
 
     //for loop
-    for(int i = 0; i < 10; i+=2)
+    for(int i = 0; i <= 10; i+=2)
     {
         cout << "Value of i : " << i << endl;
     }
     cout << "LiftOFF!!";
     cout << "\n\n";
 
+
+    // important ***********************************************************************************
     for(n=0, i =100; n !=i; ++n, --i)
     {
         cout << "\n( n = " << n << " i = " << i << " )";
     }
 
-    //range based for loop
+    cout << NEWLINE;
+    //range based for loop *************************************************************************
     cout << "\nUse of Range based for loop " << endl;
     int arr[] = {23,3, 64, 34, 6, 44};
     for(auto a : arr)
