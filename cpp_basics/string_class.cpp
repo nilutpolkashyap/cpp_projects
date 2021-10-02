@@ -45,7 +45,7 @@ int main()
     cout << "first character of " << str2 << " : " << str2.front() << endl;
     cout << "last character of " << str2 << " : " << str2.back() << endl;
 
-    cout << " fifth"
+    cout << " fifth";
 
     cout << "\n";
     str4.clear();       // clear function deletes all character from string
