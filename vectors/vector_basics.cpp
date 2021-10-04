@@ -92,5 +92,11 @@ int main(int argc, char **argv)
     }
     cout << "\n";
 
+    cout << "\nusing size() : ";
+    for(auto i = 0; i < vec1.size(); i++)
+    {
+        cout << vec1[i] << " ";
+    }
+
     return 0;
 }
