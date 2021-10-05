@@ -25,5 +25,9 @@ int main(int argc, char ** argv)
         cout << *i << " ";
     }
 
+    vector<int> vec3;
+
+    
+
     return 0;
 }
