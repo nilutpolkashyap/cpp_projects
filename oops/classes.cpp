@@ -1,32 +1,38 @@
-// C++ program to demonstrate
-// accessing of data members
-
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-class Geeks
+
+class Student
 {
-	// Access specifier
 	public:
+		// class  data 
+		string name;
+		int id;
 
-	// Data Members
-	string geekname;
+		// class member function - inside class declaration
+		void print_id();
 
-	// Member Functions()
-	void printname()
-	{
-	cout << "Geekname is: " << geekname;
-	}
+		// class member function - inside class definition
+		void print_name()
+		{
+			cout << "Student Name : " << name << endl;
+		}
 };
 
-int main() {
+// class member function - outside class defintion
+void Student::print_id()
+{
+	cout << "Student ID : " << id << endl;
+}
 
-	// Declare an object of class geeks
-	Geeks obj1;
+int main(int argc, char **argv)
+{
+	Student student1;
 
-	// accessing data member
-	obj1.geekname = "Abhi";
+	student1.name = "Nilutpol";
+	student1.id = 24;
 
-	// accessing member function
-	obj1.printname();
+	student1.print_name();
+	student1.print_id();
+
 	return 0;
 }
