@@ -23,7 +23,6 @@ int main(int argc, char **argv)
 	obj1.num = 24;
 
 	obj1.print_values();
-	
 
 	return 0;
 }
