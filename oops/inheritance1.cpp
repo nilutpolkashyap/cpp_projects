@@ -12,6 +12,11 @@ class ChildClass : public ParentClass
     public:
         int c_id;
 
+        void info()
+        {
+            cout << "Code for Inheritance" << endl;
+        }
+
         void print_values()
         {
             cout << "ParentClass ID : " << p_id << endl;
@@ -25,6 +30,8 @@ int main(int argc, char **argv)
 
     obj1.p_id = 100;
     obj1.c_id = 30;
+
+    obj1.info();
 
     obj1.print_values();
 
