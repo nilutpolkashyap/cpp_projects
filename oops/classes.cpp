@@ -10,10 +10,16 @@ class MyClass
 		void print_values()
 		{
 			cout << "Name : " << name << endl;
-			cout << "Num : " << num << endl;
+			// cout << "Num : " << num << endl;
 		}
+
+		void print_num();
 };
 
+void MyClass::print_num()
+{
+	cout << "Num : " << num << endl;
+}
 
 int main(int argc, char **argv)
 {
@@ -23,6 +29,7 @@ int main(int argc, char **argv)
 	obj1.num = 24;
 
 	obj1.print_values();
+	obj1.print_num();
 
 	return 0;
 }
