@@ -1,38 +1,29 @@
 #include <iostream>
 using namespace std;
 
-class Student
+class MyClass
 {
 	public:
-		// class  data 
 		string name;
-		int id;
+		int num;
 
-		// class member function - inside class declaration
-		void print_id();
-
-		// class member function - inside class definition
-		void print_name()
+		void print_values()
 		{
-			cout << "Student Name : " << name << endl;
+			cout << "Name : " << name << endl;
+			cout << "Num : " << num << endl;
 		}
 };
 
-// class member function - outside class defintion
-void Student::print_id()
-{
-	cout << "Student ID : " << id << endl;
-}
 
 int main(int argc, char **argv)
 {
-	Student student1;
+	MyClass obj1;
 
-	student1.name = "Nilutpol";
-	student1.id = 24;
+	obj1.name = "Nilutpol";
+	obj1.num = 24;
 
-	student1.print_name();
-	student1.print_id();
+	obj1.print_values();
+	
 
 	return 0;
 }
