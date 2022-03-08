@@ -29,6 +29,5 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         cout << "Value : " << arr1[i] << " Index : " << i << " Address : " << & arr1[i] << endl;
-
     }
 }
