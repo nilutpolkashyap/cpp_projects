@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// base class
 class Animal {
    public:
     void info() {
@@ -9,7 +8,6 @@ class Animal {
     }
 };
 
-// derived class 1
 class Dog : public Animal {
    public:
     void bark() {
@@ -17,7 +15,6 @@ class Dog : public Animal {
     }
 };
 
-// derived class 2
 class Cat : public Animal {
    public:
     void meow() {
@@ -26,16 +23,14 @@ class Cat : public Animal {
 };
 
 int main() {
-    // Create object of Dog class
     Dog dog1;
     cout << "Dog Class:" << endl;
-    dog1.info();  // Parent Class function
+    dog1.info(); 
     dog1.bark();
 
-    // Create object of Cat class
     Cat cat1;
     cout << "\nCat Class:" << endl;
-    cat1.info();  // Parent Class function
+    cat1.info(); 
     cat1.meow();
 
     return 0;
