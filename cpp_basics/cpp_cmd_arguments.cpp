@@ -29,6 +29,5 @@ int main(int argc, char** argv)
             cout << "argv [" << i << "] : " << argv[i] << endl;
         }
     }
-
     return 0;
 }
