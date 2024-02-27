@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10.2)
 
-project(simple_bt_example LANGUAGES CXX)
+project(grasp_place_bt)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(${PROJECT_NAME} simple_bt_example.cpp)
+add_executable(${PROJECT_NAME} grasp_place_bt.cpp)
 
 find_package(ament_cmake QUIET)
 
@@ -20,4 +20,3 @@ else()
     target_link_libraries(${PROJECT_NAME} BT::behaviortree_cpp)
 
 endif()
-
